@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Entidades.ObjetoaprendizajeEntity" table="objetoaprendizaje" schema="oda">
+        <id name="idObjetoaprendizaje">
+            <column name="id_objetoaprendizaje" sql-type="int(11)"/>
+        </id>
+        <property name="nombreObjetoaprendizaje">
+            <column name="nombre_objetoaprendizaje" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="duracionObjetoaprendizaje">
+            <column name="duracion_objetoaprendizaje" sql-type="time"/>
+        </property>
+        <property name="objetivoObjetoaprendizaje">
+            <column name="objetivo_objetoaprendizaje" sql-type="varchar(500)" length="500" not-null="true"/>
+        </property>
+        <property name="descripcionObjetoaprendizaje">
+            <column name="descripcion_objetoaprendizaje" sql-type="varchar(500)" length="500" not-null="true"/>
+        </property>
+        <property name="enlaceObjetoaprendizaje">
+            <column name="enlace_objetoaprendizaje" sql-type="varchar(150)" length="150" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/oda</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">saqohLWa</property>
+
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping resource="Entidades/AutorEntity.hbm.xml"/>
+        <mapping class="Entidades.AutorEntity"/>
+        <mapping resource="Entidades/LicenciaturaUnidadaprendizajeEntity.hbm.xml"/>
+        <mapping class="Entidades.LicenciaturaUnidadaprendizajeEntity"/>
+        <mapping resource="Entidades/ObjetoaprendizajeEntity.hbm.xml"/>
+        <mapping class="Entidades.ObjetoaprendizajeEntity"/>
+        <mapping resource="Entidades/SubcategoriaEntity.hbm.xml"/>
+        <mapping class="Entidades.SubcategoriaEntity"/>
+        <mapping resource="Entidades/TipoobjetoEntity.hbm.xml"/>
+        <mapping class="Entidades.TipoobjetoEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
